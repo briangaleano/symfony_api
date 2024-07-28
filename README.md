@@ -1,6 +1,6 @@
 
 
-# Prueba Telus
+# Prueba
 
 ## Getting Started
 
