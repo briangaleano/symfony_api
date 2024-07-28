@@ -1,0 +1,35 @@
+registre,208
+gender,total
+male,4
+female,6
+other,0
+
+
+age,male,female,other
+0-10,,,
+11-20,,,
+21-30,,4,
+31-40,3,1,
+41-50,1,1,
+51-60,,,
+61-70,,,
+71-80,,,
+81-90,,,
+91*,,,
+
+City,male,female,other
+Phoenix,1,0,0
+Houston,0,1,0
+Washington,1,0,0
+Seattle,0,1,0
+Jacksonville,1,0,0
+"Fort Worth",1,0,0
+Indianapolis,0,1,0
+"Fort Worth",1,0,0
+"San Antonio",0,1,0
+"New York",1,0,0
+
+SO,total
+Windows,5
+Apple,5
+Linux,0
