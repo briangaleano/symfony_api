@@ -46,8 +46,8 @@ final class GetInfoHandler
        $flattenedData = [];
 
         
-       //$this->sftpUploader->uploadFile($jsonFilePath, "data_$date.json");
-       //$this->sftpUploader->uploadFile($csvFilePath, "summary_$date.csv");
+       $this->sftpUploader->uploadFile($jsonFilePath, "data_$date.json");
+       $this->sftpUploader->uploadFile($csvFilePath, "summary_$date.csv");
 
        //dump($responseInfo->getArray());
        //$this->etlData->transforData($responseArray);
