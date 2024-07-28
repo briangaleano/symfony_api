@@ -3,6 +3,9 @@
 namespace App\Entity;
 
 use App\Repository\SummaryRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: SummaryRepository::class)]
@@ -13,17 +16,28 @@ class Summary
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $registre = null;
+    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    private ?\DateTimeInterface $date_insertion = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $male = null;
+    private ?int $process_etl = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $female = null;
+    #[ORM\Column(length: 255)]
+    private ?string $file_path = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $other = null;
+    #[ORM\Column(length: 255)]
+    private ?string $file_path_etl = null;
+
+    /**
+     * @var Collection<int, EtlDetail>
+     */
+    #[ORM\OneToMany(targetEntity: EtlDetail::class, mappedBy: 'id', orphanRemoval: true)]
+    private Collection $etl_details;
+
+    public function __construct()
+    {
+        $this->etl_details = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -37,50 +51,80 @@ class Summary
         return $this;
     }
 
-    public function getRegistre(): ?int
+    public function getDateInsertion(): ?\DateTimeInterface
     {
-        return $this->registre;
+        return $this->date_insertion;
     }
 
-    public function setRegistre(?int $registre): static
+    public function setDateInsertion(\DateTimeInterface $date_insertion): static
     {
-        $this->registre = $registre;
+        $this->date_insertion = $date_insertion;
 
         return $this;
     }
 
-    public function getMale(): ?int
+    public function getProcessEtl(): ?int
     {
-        return $this->male;
+        return $this->process_etl;
     }
 
-    public function setMale(?int $male): static
+    public function setProcessEtl(int $process_etl): static
     {
-        $this->male = $male;
+        $this->process_etl = $process_etl;
 
         return $this;
     }
 
-    public function getFemale(): ?int
+    public function getFilePath(): ?string
     {
-        return $this->female;
+        return $this->file_path;
     }
 
-    public function setFemale(?int $female): static
+    public function setFilePath(string $file_path): static
     {
-        $this->female = $female;
+        $this->file_path = $file_path;
 
         return $this;
     }
 
-    public function getOther(): ?int
+    public function getFilePathEtl(): ?string
     {
-        return $this->other;
+        return $this->file_path_etl;
     }
 
-    public function setOther(?int $other): static
+    public function setFilePathEtl(string $file_path_etl): static
     {
-        $this->other = $other;
+        $this->file_path_etl = $file_path_etl;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, EtlDetail>
+     */
+    public function getEtlDetails(): Collection
+    {
+        return $this->etl_details;
+    }
+
+    public function addEtlDetails(EtlDetail $etlDetail): static
+    {
+        if (!$this->etl_details->contains($etlDetail)) {
+            $this->etl_details->add($etlDetail);
+            $etlDetail->setId($this);
+        }
+
+        return $this;
+    }
+
+    public function removeEtlDetails(EtlDetail $etlDetail): static
+    {
+        if ($this->etl_details->removeElement($etlDetail)) {
+            // set the owning side to null (unless already changed)
+            if ($etlDetail->getId() === $this) {
+                $etlDetail->setId(null);
+            }
+        }
 
         return $this;
     }

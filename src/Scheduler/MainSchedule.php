@@ -16,7 +16,7 @@ class MainSchedule implements ScheduleProviderInterface
     public function getSchedule(): Schedule
     {
         $schedule = (new Schedule())->add(
-            RecurringMessage::every('50 seconds', new GetInfo()),
+            RecurringMessage::every('midnight', new GetInfo()),
         );
 
 

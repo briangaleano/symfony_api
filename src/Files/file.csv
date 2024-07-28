@@ -1,35 +1,11 @@
-registre,208
-gender,total
-male,4
-female,6
-other,0
-
-
-age,male,female,other
-0-10,,,
-11-20,,,
-21-30,,4,
-31-40,3,1,
-41-50,1,1,
-51-60,,,
-61-70,,,
-71-80,,,
-81-90,,,
-91*,,,
-
-City,male,female,other
-Phoenix,1,0,0
-Houston,0,1,0
-Washington,1,0,0
-Seattle,0,1,0
-Jacksonville,1,0,0
-"Fort Worth",1,0,0
-Indianapolis,0,1,0
-"Fort Worth",1,0,0
-"San Antonio",0,1,0
-"New York",1,0,0
-
-SO,total
-Windows,5
-Apple,5
-Linux,0
+id,firstName,lastName,maidenName,age,gender,email,phone,username,password,birthDate,image,bloodGroup,height,weight,eyeColor,hair_color,hair_type,ip,address_address,address_city,address_state,address_stateCode,address_postalCode,address_coordinates_lat,address_coordinates_lng,address_country,macAddress,university,bank_cardExpire,bank_cardNumber,bank_cardType,bank_currency,bank_iban,company_department,company_name,company_title,company_address_address,company_address_city,company_address_state,company_address_stateCode,company_address_postalCode,company_address_coordinates_lat,company_address_coordinates_lng,company_address_country,ein,ssn,userAgent,crypto_coin,crypto_wallet,crypto_network,role
+1,Emily,Johnson,Smith,28,female,emily.johnson@x.dummyjson.com,"+81 965-431-3024",emilys,emilyspass,1996-5-30,https://dummyjson.com/icon/emilys/128,O-,193.24,63.16,Green,Brown,Curly,42.48.100.32,"626 Main Street",Phoenix,Mississippi,MS,29112,-77.16213,-92.084824,"United States",47:fa:41:18:ec:eb,"University of Wisconsin--Madison",03/26,9289760655481815,Elo,CNY,YPUXISOBI7TTHPK2BR3HAIXL,Engineering,"Dooley, Kozey and Cronin","Sales Manager","263 Tenth Street","San Francisco",Wisconsin,WI,37657,71.814525,-161.150263,"United States",977-175,900-590-289,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",admin
+2,Michael,Williams,,35,male,michael.williams@x.dummyjson.com,"+49 258-627-6644",michaelw,michaelwpass,1989-8-10,https://dummyjson.com/icon/michaelw/128,B+,186.22,76.32,Red,Green,Straight,12.13.116.142,"385 Fifth Street",Houston,Alabama,AL,38807,22.815468,115.608581,"United States",79:15:78:99:60:aa,"Ohio State University",02/27,6737807858721625,Elo,SEK,83IDT77FWYLCJVR8ISDACFH0,Support,"Spinka - Dickinson","Support Specialist","395 Main Street","Los Angeles","New Hampshire",NH,73442,79.098326,-119.624845,"United States",912-602,108-953-962,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/97.0.1072.76 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",admin
+3,Sophia,Brown,,42,female,sophia.brown@x.dummyjson.com,"+81 210-652-2785",sophiab,sophiabpass,1982-11-6,https://dummyjson.com/icon/sophiab/128,O-,177.72,52.6,Hazel,White,Wavy,214.225.51.195,"1642 Ninth Street",Washington,Alabama,AL,32822,45.289366,46.832664,"United States",12:a3:d3:6f:5c:5b,"Pepperdine University",04/25,7795895470082859,"Korean Express",SEK,90XYKT83LMM7AARZ8JN958JC,"Research and Development","Schiller - Zieme",Accountant,"1896 Washington Street",Dallas,Nevada,NV,88511,20.086743,-34.577107,"United States",963-113,638-461-822,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",admin
+4,James,Davis,,45,male,james.davis@x.dummyjson.com,"+49 614-958-9364",jamesd,jamesdpass,1979-5-4,https://dummyjson.com/icon/jamesd/128,AB+,193.31,62.1,Amber,Blonde,Straight,101.118.131.66,"238 Jefferson Street",Seattle,Pennsylvania,PA,68354,16.782513,-139.34723,"United States",10:7d:df:1f:97:58,"University of Southern California",05/29,5005519846254763,Mastercard,INR,7N7ZH1PJ8Q4WU1K965HQQR27,Support,"Pagac and Sons","Research Analyst","1622 Lincoln Street","Fort Worth",Pennsylvania,PA,27768,54.91193,-79.498328,"United States",904-810,116-951-314,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",admin
+5,Emma,Miller,Johnson,30,female,emma.miller@x.dummyjson.com,"+91 759-776-1614",emmaj,emmajpass,1994-6-13,https://dummyjson.com/icon/emmaj/128,AB-,192.8,63.62,Green,White,Straight,224.126.22.183,"607 Fourth Street",Jacksonville,Colorado,CO,26593,0.505589,-157.43281,"United States",32:b9:7e:8d:f5:e8,"Northeastern University",03/26,5772950119588627,"American Express",CAD,TAVHURD845KVBTB8W81AQXRY,"Human Resources","Graham - Gulgowski","Quality Assurance Engineer","1460 Sixth Street","San Antonio",Idaho,ID,21965,44.346545,-26.944701,"United States",403-505,526-210-885,"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",admin
+6,Olivia,Wilson,,22,female,olivia.wilson@x.dummyjson.com,"+91 607-295-6448",oliviaw,oliviawpass,2002-4-20,https://dummyjson.com/icon/oliviaw/128,B+,182.61,58,Hazel,Gray,Curly,249.178.112.207,"547 First Street","Fort Worth",Tennessee,TN,83843,75.32627,-26.15285,"United States",9c:7f:ea:34:18:19,"University of North Carolina--Chapel Hill",05/28,6771923832947881,"Diners Club International",BRL,V6H0O5OE3Q4JVKWDTYWZABMD,"Product Management","Pfannerstill Inc","Research Analyst","425 Sixth Street",Indianapolis,Oklahoma,OK,74263,74.986644,-132.916888,"United States",921-709,836-772-168,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",moderator
+7,Alexander,Jones,,38,male,alexander.jones@x.dummyjson.com,"+61 260-824-4986",alexanderj,alexanderjpass,1986-10-20,https://dummyjson.com/icon/alexanderj/128,AB-,153.89,77.42,Blue,White,Straight,166.204.84.32,"664 Maple Street",Indianapolis,Delaware,DE,86684,35.289664,7.063255,"United States",d2:64:58:2d:1c:46,"University of Illinois--Urbana-Champaign",05/25,7344951706130140,JCB,EUR,49V4GVDVMP0MHIDD4VXMQ3A2,Engineering,"Dickens - Beahan","Web Developer","996 Eighth Street",Washington,Kansas,KS,27858,-75.462366,-128.025697,"United States",638-127,722-993-925,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",moderator
+8,Ava,Taylor,,27,female,ava.taylor@x.dummyjson.com,"+1 458-853-7877",avat,avatpass,1997-8-25,https://dummyjson.com/icon/avat/128,AB-,168.47,57.08,Hazel,Red,Kinky,150.73.197.233,"1197 First Street","Fort Worth","Rhode Island",RI,24771,-81.194833,-87.948158,"United States",8d:2e:c2:d6:e7:a8,"University of Wisconsin--Madison",01/29,6412128967460199,Maestro,CNY,TS66YQ8R16OX7IJKLUONDQHP,Marketing,"Nikolaus Inc","Chief Executive Officer","930 Lincoln Street",Austin,Colorado,CO,47592,87.970083,-42.769351,"United States",297-762,257-419-109,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",moderator
+9,Ethan,Martinez,,33,male,ethan.martinez@x.dummyjson.com,"+92 933-608-5081",ethanm,ethanmpass,1991-2-12,https://dummyjson.com/icon/ethanm/128,AB+,159.19,68.81,Hazel,Purple,Curly,63.191.127.71,"466 Pine Street","San Antonio",Louisiana,LA,72360,74.074918,-25.312703,"United States",59:e:9e:e3:29:da,"Syracuse University",02/25,7183482484317509,Visa,CAD,CW5U5KS23U7JYD22TVQL7SIH,Support,"Gorczany - Gottlieb","Legal Counsel","1597 Oak Street",Chicago,Florida,FL,28100,-67.45208,-23.209886,"United States",790-434,569-650-348,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",moderator
+10,Isabella,Anderson,Davis,31,female,isabella.anderson@x.dummyjson.com,"+49 770-658-4885",isabellad,isabelladpass,1993-6-10,https://dummyjson.com/icon/isabellad/128,A-,150.56,50.1,Brown,Blonde,Curly,114.9.114.205,"1964 Oak Street","New York",Utah,UT,89352,41.331324,151.782727,"United States",b1:b0:d0:a2:82:80,"California Institute of Technology (Caltech)",05/27,6118714010128731,NPS,CNY,GBZRGDMKUOTO34HBCI7A986J,Marketing,"Pollich - Hilpert","Chief Financial Officer","1029 Adams Street","San Diego",Maryland,MD,63847,-25.843393,-62.692681,"United States",127-297,902-438-728,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",Bitcoin,0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a,"Ethereum (ERC20)",moderator

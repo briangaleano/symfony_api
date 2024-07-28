@@ -19,18 +19,21 @@ class GetUserInfo{
 
     public function getUserData(){
 
-
         $response = $this->client->request(
             'GET',
             "{$this->endpoint}?limit=10",
         );
-        $content = $response->getContent();
-        // $content = '{"id":521583, "name":"symfony-docs", ...}'
-        $responseArray = $response->toArray();
 
+        if($response->getContent() != null){
+            $content = $response->getContent();
+            // $content = '{"id":521583, "name":"symfony-docs", ...}'
+            $responseArray = $response->toArray();
 
-        $info = new ReturnUserInfo($responseArray, $content);
+            $info = new ReturnUserInfo($responseArray, $content);
 
-        return $info;
+            return $info;
+        }else{
+            return null;
+        }
     }
 }
