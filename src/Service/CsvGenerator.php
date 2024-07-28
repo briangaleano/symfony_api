@@ -18,7 +18,7 @@ class CsvGenerator
             $csv->insertOne($record);
         }
         // Save the file to a specific path
-        $filePath = '/Users/briangaleano/Documents/GitHub/Telus/symfony_api/src/Files/file.csv';
+        $filePath = '%env(FILE_PATH)%';
         file_put_contents($filePath, $csv->getContent());
 
         return $filePath;

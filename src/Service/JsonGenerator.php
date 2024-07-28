@@ -12,7 +12,7 @@ class JsonGenerator
     {
     
          // Save the file to a specific path
-         $filePath = '/Users/briangaleano/Documents/GitHub/Telus/symfony_api/src/Files/file.json';
+         $filePath = '%env(FILE_PATH)%';
         
         $jsonData = json_encode($data, JSON_PRETTY_PRINT);
         file_put_contents($filePath, $jsonData);
